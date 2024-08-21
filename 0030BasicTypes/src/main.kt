@@ -3,29 +3,39 @@ fun main() {
     println(value1::class.simpleName)
     println(value1)
 
-    val value2:Byte = 127
-    val value3:Short = 32_767
-    val value4:Int = 12345678
-    val value5:Long = 1234345351L
+    // value1 = 2.1
+    // println(value1)
+    println(7::class.simpleName)
+    println(1.2::class.simpleName)
 
-    val value6:UShort = 33_767u
+    var value2:Double = 2.3
+    println(value2::class.simpleName)
+    value2 = 6.8
 
-    val value7:Double = 1.23456780123456
-    println(value7::class.simpleName)
-    println(value7)
+    var text1:String = "Hello"
+    println(text1::class.simpleName)
+    text1 = "Hi"
+    println(text1)
 
-    val value8:Float = 1.23f
-    println(value8::class.simpleName)
-    println(value8)
+    var letter:Char = 'f'
+    println(letter)
+    println(letter::class.simpleName)
 
-    val value9:String = "Hello there"
-    println(value9::class.simpleName)
+    val value3:UInt = 123U
+    val value4:Float = 1.23F
+    val value5:ULong = 1234UL
 
-    val value10:Char = 'g'
-    println(value10::class.simpleName)
+    /*
+    Integer
+    Byte        8
+    Short       16
+    Int         32
+    Long        64
 
-    var value11 = 7.8
-    println(value11::class.simpleName)
+    UByte, UShort, UInt, ULong
 
-    value11 = 1.0
+    Floating-point
+    Double      64
+    Float       32
+     */
 }
