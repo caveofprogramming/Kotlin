@@ -1,35 +1,27 @@
 fun main() {
-    /*
-    ==, <, >, <=, >=, !=
-     */
+  // ==, !=, <, >, <=, >=
 
-    println(3 < 5)
-    println(3 > 5)
-    println(5 == 5)
-    println(4 != 5)
-    println(5 <= 5)
-    println(3 >= 4)
+    println("Equality test operator: ${2 == 3}")
+    println("Not equal operator: ${2 != 3}")
+    println("Less than operator: ${2 < 3}")
+    println("Greater than operator: ${2 > 3}")
+    println("Less than or equal operator: ${2 <= 3}")
+    println("Greater than or equal operator: ${3 >= 3}")
 
-    val temperature = 25
+    val temperature = 7
 
-    if(temperature < 21) {
-        println("Turn on heating")
+    if(temperature < 0) {
+        println("Fridge too cold")
     }
-
-    if(temperature > 27) {
-        println("Turn on air conditioning")
+    else if(temperature < 4) {
+        println("Fridge OK")
+    }
+    else if(temperature < 5) {
+        println("Fridge too warm")
     }
     else {
-        println("Temperature is OK")
+        println("Danger zone!")
     }
 
-    if(temperature < 20) {
-        println("Turn on heating")
-    }
-    else if(temperature < 27) {
-        println("No action")
-    }
-    else {
-        print("Turn on air conditioning")
-    }
+    println("Finished")
 }
