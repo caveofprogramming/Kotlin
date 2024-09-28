@@ -24,5 +24,5 @@ fun main() {
     val values = arrayOf(3, 5, 7, 7.3, "Hello")
     println(values[2])
     println(values.contentToString())
-    println(values)
+    println(values::class.simpleName)
 }
