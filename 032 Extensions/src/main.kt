@@ -24,5 +24,7 @@ fun main() {
     }
 
     val number:Int = 7
-    7.greet()
+    number.greet()
+
+    11.greet()
 }
