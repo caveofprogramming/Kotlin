@@ -10,24 +10,20 @@ class TabbyCat: HouseCat() {
     override fun speak() = println("I'm a tabby cat.")
 }
 
-fun Cat.greet() = println("Hello from cat.")
-fun HouseCat.greet() = println("Hello from housecat.")
-fun TabbyCat.greet() = println("Hello from tabby cat.")
+fun Cat.greet() = println("Hello from Cat.")
+fun HouseCat.greet() = println("Hello from HouseCat.")
+fun TabbyCat.greet() = println("Hello from TabbyCat.")
 
 fun main() {
-    var doLoop:Boolean = true
-
-    var cat:Cat = Cat()
-
-    while(doLoop) {
+    while(true) {
         println("Enter 1-3, or 0 to quit > ")
         val input = readln()
 
-        when(input) {
-            "1" -> cat = Cat()
-            "2" -> cat = HouseCat()
-            "3" -> cat = TabbyCat()
-            else -> doLoop = false
+        val cat:Cat = when(input) {
+            "1" -> Cat()
+            "2" -> HouseCat()
+            "3" -> TabbyCat()
+            else -> break
         }
 
         cat.speak()
